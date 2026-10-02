@@ -64,7 +64,7 @@ class SocksCommand(CommandBase):
         elif action == "stop":
             socks_resp = await SendMythicRPCProxyStopCommand(MythicRPCProxyStopMessage(
                 TaskID=taskData.Task.ID,
-                LocalPort=port,
+                Port=port,
                 PortType=CALLBACK_PORT_TYPE_SOCKS,
             ))
             if not socks_resp.Success:
