@@ -37,7 +37,8 @@ class BasicPythonAgent(PayloadType):
         #"runmacho", will be added in future versions
         "runjxa",
         "socks",
-        "interval"
+        "interval",
+        "runshellcode"
     ]
     build_steps = [
         BuildStep(step_name="Gathering Files", step_description="Making sure all commands have backing files on disk"),
